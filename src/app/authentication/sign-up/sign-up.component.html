@@ -1,0 +1,115 @@
+<app-header></app-header><br>
+<div class="container-fluid" style="background-color:antiquewhite;">
+    <div class="row">
+       <div class="col-md-12">
+          <h2 style="color:#E11B88;font-size:20px;text-align: center;margin:5px">CRÉER UN COMPTE SUR JESUIFAN C'EST 100% GRATUIT</h2>
+       </div>
+    </div>
+
+</div>
+<div class="container-fluid">
+   <div class="row">
+     <div class="login-form">
+        <form (ngSubmit)="submitForm()" > 
+            <div class="form-group">
+             <label style="font-weight: bold;padding-left: 37px;"for="">Je suis un: *</label>
+             <div class="row" style="padding-left:20px">
+                <div class="col-md-4">
+                    <input type="radio"  value="Particulier" [(ngModel)]="type" name="type" class="form-check-input"><label for="">Particulier</label>
+                  </div>
+                  <div class="col-md-4">
+                     <input type="radio" value="Proffessionnel" name="type" [(ngModel)]="type" class="form-check-input"><label for="">Particulier</label>
+                   </div>
+             </div>
+            </div>
+            <div class="form-group">
+                <label for="username" style="font-weight: bold;padding-left: 37px;">Identifiant (pseudo)</label>
+                <div class="input-group">
+                    <div class="input-group-prepend" >
+                        <span class="input-group-text" style="background-color: #444242;">
+                            <span class="fa fa-user" style="color:white"></span>
+                        </span>                    
+                    </div>
+                    <input type="text" class="form-control" [(ngModel)]="identifiant" name="identifiant" placeholder="Téléphone, mail ou identifiant" required="required" style="border-radius: 7px;">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="telephone" style="font-weight: bold;padding-left: 37px;">Téléphone*</label>
+                <div class="input-group">
+                    <div class="input-group-prepend" >
+                        <span class="input-group-text" style="background-color: #444242;">
+                            <span class="fa fa-phone" style="color:white"></span>
+                        </span>                    
+                    </div>
+                    <input type="text" class="form-control" placeholder="63636363" name="telephone" [(ngModel)]="telephone" required="required" style="border-radius: 7px;">
+                </div>
+                <div class="contactParTel" style="padding-left: 20px;font-weight: 300;font-size:12px">
+                    <input  type="checkbox" role="switch" class="form-check-input" name="" id="flexSwitchCheckDefault" [(ngModel)]="contactParTelephone" name="contactParTelephone"><label for="">Les clients peuvent me contacter par téléphone</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" style="font-weight: bold;padding-left: 37px;">Adresse e-mail*</label>
+                <div class="input-group">
+                    <div class="input-group-prepend" >
+                        <span class="input-group-text" style="background-color: #444242;">
+                            <span class="fa fa-at" style="color:white"></span>
+                        </span>                    
+                    </div>
+                    <input type="text" class="form-control" [(ngModel)]="email" name="email" placeholder="Adresse e-mail" required="required" style="border-radius: 7px;">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" style="font-weight: bold;padding-left: 37px;">Mot de passe</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" style="background-color:#444242;">
+                            <i class="fa fa-key" style="color:white"></i>
+                        </span>                    
+                    </div>
+                    <input type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="Mot de passe" required="required" style="border-radius:7px">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password" style="font-weight: bold;padding-left: 37px;">Confirmez votre mot de passe*</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" style="background-color:#444242;">
+                            <i class="fa fa-key" style="color:white"></i>
+                        </span>                    
+                    </div>
+                    <input type="password" class="form-control" name="confirmPassword" [(ngModel)]="confirmPassword" placeholder="confirmez votre mot de passe" required="required" style="border-radius:7px">
+                </div><br>
+                <div *ngIf="password !== confirmPassword && confirmPassword !== ''" class="alert alert-danger">Mot de passe ne correspond pas!</div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                  <div class="col-md-6">
+                     <div class="form-group">
+                        <label style="font-weight: bold;padding-left: 37px;" for="">NOM</label>
+                        <input type="text" class="form-control" name="nom" [(ngModel)]="nom" id="nom" placeholder="nom">
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                       <label style="font-weight: bold;padding-left: 37px;" for="">PRÉNOM</label>
+                       <input type="text" class="form-control" [(ngModel)]="prenom" name="prenom" id="prénom" placeholder="prénom">
+                    </div>
+                 </div>
+                </div>
+
+            </div>
+            <div class="g-recaptcha" data-sitekey="6LdiIrcnAAAAAE6-igheHlFxSitQCHolNKH2TC8r" (resolved)="handleRecaptcha($event)"></div>
+
+            <div class="form-group" style="padding-left: 50px;">
+                <button type="submit" class="btn btn-primary btn-block btn-log" [disabled]="isLoading">S'INSCRIRE</button>
+            </div>
+
+            <div *ngIf="successMessage" class="alert alert-success" role="alert">{{ successMessage }}</div>
+            <div *ngIf="errorMessage" class="alert alert-danger" role="alert">{{ errorMessage }}</div>          
+            <div class="bottom-action clearfix">
+                <label class="float-left form-check-label">Vous avez déja un compte? <a href="" routerLink="/login">se connecter</a> </label>
+            </div>
+        </form>
+     </div>
+   </div>
+</div>

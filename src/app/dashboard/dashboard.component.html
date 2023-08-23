@@ -1,0 +1,181 @@
+
+<div class="container-fluid overflow-auto" style="background-color:#ffffff">
+    <div class="row" >
+        <div class="col-sm-2 scrollable-div ">
+            <div class="top-sidenav">
+             <div class="header">
+               <img src="../../../assets/images/jesuifan 1.png" alt="" style="width:100px;height: 60px;flex-shrink: 0;">
+             </div>
+             <div class="sidenav">
+               
+               <ul class="menu" style="margin-left: 40px;"><br>
+                <li *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
+                    <a routerLinkActive="active" [routerLink]="[menuItem.path]" class="nav-link">
+                        <i class="ni {{menuItem.icon}}"></i>
+                        {{menuItem.title}}
+                    </a>
+                </li>
+
+               </ul>
+             </div>
+             <div class="bottom-sidenav" style="background-color: #C3C2C2;">
+               
+               <ul class="menu" style="margin-left: 40px;"><br>
+                 <span style="font-weight: bold;font-size: 20px;color:black">Villes</span>
+                 <li><a href="#" style="color:blue">Ouagadougou</a></li>
+                 <li><a href="#" style="color:blue">Bobo Dioulasso</a></li>
+                 <li><a href="#" style="color:blue">Koudougou</a></li>
+               </ul><br><br>
+               <ul class="menu" style="margin-left: 40px;"><br>
+                 <span style="font-weight: bold;font-size: 20px;color:black">Catégories</span>
+                 <li><a href="#" style="color:blue">Bizi- Escortes</a></li>
+                 <li><a href="#" style="color:blue">Massage</a></li>
+                 <li><a href="#" style="color:blue">Produit Adulte</a></li>
+               </ul>
+             </div>
+             
+               
+            </div>
+         </div>
+      <div class="col-sm-10">
+        <div class="main-content" style="background-color: #ffffff;">
+         <div class="row">
+           <div class="col-sm-12">
+            <h3 id="titre-dash">Dominez en boostant votre annonce des la publication en cliquant sur <span style="color:rgb(255, 6, 155)">BOOSTER L'ANNONCE</span></h3>
+           </div>
+         </div>
+
+         <div class="container" style="background: #4D4B4B;
+         box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.25);">
+           <div class="row">
+             <div class="col-sm-9">
+                <div class="box-title">
+                   <h3 class="title1">MON TABLEAU DE BORD</h3>
+                </div>
+             </div>
+             <div class="col-sm-3">
+                 <button class="btn shadow-lg" style="background-color: #E11B88;color: white;margin-top:15px;border-radius: 45px;font-family: Inter;font-style: normal;line-height: normal;font-weight: 400;font-size: 13px;" ><i class="bi bi-plus-circle"></i >Publier une annonce</button>
+             </div>
+           </div>
+           <div class="row">
+              <div class="col-md-8">
+                 <h3 style="color:#C3C2C2;font-weight:bold;font-size:15px;margin-left:20px">Bonjour  <span style="color:#fff">{{user.user.nom}} {{user.user.prenom}}</span></h3>
+              </div>
+           </div>
+           <div class="row">
+            <div class="col-md-10">
+              <div class="liste-credit" style="margin:20px">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                  <circle cx="13.5" cy="13.5" r="13.5" fill="#D9D9D9"/>
+                </svg> <span style="color: #C3C3C3;
+                font-family: Inter;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;"> Crédits disponibles :</span> <span style="color: #D0000C;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;">{{user.user.amountSpent}} Fcfa</span> <span style="color: #318D11;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;">(<a href="" routerLink="/acheter-credit">Ajouter</a>)</span><br>
+                <br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                  <circle cx="13.5" cy="13.5" r="13.5" fill="#D9D9D9"/>
+                </svg><span style="color: #C3C3C3;
+                font-family: Inter;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;"> Crédits d’annonces :</span><span style="color: #D0000C;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;">{{user.user.credits}} Fcfa</span> <span style="color: #318D11;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;">(<a href="" routerLink="/acheter-credit">Ajouter</a>)</span>
+              </div>
+            </div>
+         </div>
+         <div class="row" >
+            <div class="col-md-11 credit" style="border-top: 1px solid #D9D9D9;border-bottom: 1px solid #D9D9D9;"><br>
+              <span style="color: #FFF;
+              font-family: Inter;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;"> Obtenez des crédits pour votre compte. Utilisez ces crédits pour ajouter de l'argent à votre compte personnel ou professionnel selon vos préférences. Ensuite, utilisez ces crédits pour améliorer la visibilité et les résultats de vos annonces en les mettant en avant.</span>
+             
+              <div class="button-credit" style="padding-left: 750px;">
+                <button routerLink="/acheter-credit" class="btn shadow-lg" style="background-color: #318D11;color: white;margin-top:15px;border-radius: 45px;font-family: Inter;font-style: normal;line-height: normal;font-weight: 400;font-size: 13px;" ><i class="bi bi-plus-circle" ></i >Acheter des crédits</button>
+              </div><br>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-11 credit" >
+              <span style="color: #FFF;
+              font-family: Inter;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;">Optez pour le Pack Compte Pro et découvrez un monde d'opportunités pour augmenter vos ventes ou trouver rapidement ce dont vous avez besoin. Chaque Pack Compte Pro comprend des crédits bonus et une généreuse quantité de crédits d'annonce pour booster la visibilité de vos services et les gérer de manière optimale. Accélérez vos succès avec le Pack Compte Pro dès aujourd'hui !</span>
+            </div>
+            <div class="col-md-10">
+  
+            </div>
+            <div class="col-md-2" style="margin-top:100px">
+             
+                <button class="btn shadow-lg" style="background-color: #c70202;color: white;margin-top:15px;font-family: Inter;font-style: normal;line-height: normal;font-weight: 400;font-size: 13px;" >DÉCONNEXION</button>
+              
+            </div>
+         </div><br>
+         
+         </div>
+         <div class="container"> <br><br>
+            <div class="row" style="border: 3px solid #5A5A5A; background-color: #fff;">
+              <div class="col-md-10" ><br><br>
+                <h3 style="color: #606060;
+                font-family: Inter;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;">Rechercher Annonces (Nom & prénoms)</h3>
+             </div>
+             <div class="col-md-8">
+                <div class="form-group">
+                   <input type="text" name="searchnar" id="searchbar" class="form-control border-black" placeholder="Rechercher Annonces">
+                </div>
+             </div>
+              <div class="col-md-4">
+                <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+              </div>
+              <div class="col-md-12 card-sh">
+                 <span style="color: #003AD0;
+                 font-family: Inter;
+                 font-size: 25px;
+                 font-style: normal;
+                 font-weight: 700;
+                 line-height: normal;
+                 text-transform: uppercase;">Titre de la description</span><br>
+                 <span>Lorem ipsum dolor sit amet consectetur. Amet nulla eu maecenas amet ridiculus. Eros nibh dolor vitae et sit montes placerat varius molestie. Libero odio nunc purus aliquet elit. Mi faucibus diam augue consectetur mi eu.</span><br>
+                 <div class="btn-group" style="padding-left:850px;margin:5px">
+                    <button class="btn btn-primary">Booster l'annonce</button> <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                 </div>
+                
+              </div><br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <app-footer></app-footer>
+  </div>
+  

@@ -1,0 +1,56 @@
+.login-form {
+    width: 540px;
+    height: 350px;
+    margin: 50px auto;
+}
+.login-form form {        
+    margin-bottom: 15px;
+    background:#D9D9D9;
+    border-radius: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+.g-recaptcha {
+    margin: 10px 0;
+  }
+  
+.login-form h2 {
+    margin: 0 0 15px;
+}
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+.input-group-addon .fa {
+    font-size: 20px;
+}
+.btn {        
+    font-size: 15px;
+    font-weight: bold;
+}
+.bottom-action {
+  	font-size: 14px;
+}
+.btn-log{
+width: 396px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 30.5px;
+background: #003AD0;
+}
+.box-google{
+    width: 500px;
+
+height: 48px;
+flex-shrink: 0;
+border-radius: 20px;
+background: #D9D9D9;
+}
+.google-tile{
+    color: #003AD0;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}

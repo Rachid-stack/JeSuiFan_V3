@@ -1,0 +1,447 @@
+
+<div class="container-fluid overflow-auto" style="background-color:#ffffff">
+    <div class="row" >
+        <div class="col-sm-2 scrollable-div ">
+            <div class="top-sidenav">
+             <div class="header">
+               <img src="../../../assets/images/jesuifan 1.png" alt="" style="width:100px;height: 60px;flex-shrink: 0;">
+             </div>
+             <div class="sidenav">
+               
+               <ul class="menu" style="margin-left: 40px;"><br>
+                <li *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
+                    <a routerLinkActive="active" [routerLink]="[menuItem.path]" class="nav-link">
+                        <i class="ni {{menuItem.icon}}"></i>
+                        {{menuItem.title}}
+                    </a>
+                </li>
+
+               </ul>
+             </div>
+             <div class="bottom-sidenav" style="background-color: #C3C2C2;">
+               
+               <ul class="menu" style="margin-left: 40px;"><br>
+                 <span style="font-weight: bold;font-size: 20px;color:black">Villes</span>
+                 <li><a href="#" style="color:blue">Ouagadougou</a></li>
+                 <li><a href="#" style="color:blue">Bobo Dioulasso</a></li>
+                 <li><a href="#" style="color:blue">Koudougou</a></li>
+               </ul><br><br>
+               <ul class="menu" style="margin-left: 40px;"><br>
+                 <span style="font-weight: bold;font-size: 20px;color:black">Catégories</span>
+                 <li><a href="#" style="color:blue">Bizi- Escortes</a></li>
+                 <li><a href="#" style="color:blue">Massage</a></li>
+                 <li><a href="#" style="color:blue">Produit Adulte</a></li>
+               </ul>
+             </div>
+             
+               
+            </div>
+         </div>
+      <div class="col-sm-10">
+        <div class="main-content" style="background-color: #ffffff;">
+         <div class="row">
+           <div class="col-sm-12">
+            <h3 id="titre-dash">Dominez en boostant votre annonce des la publication en cliquant sur <span style="color:rgb(255, 6, 155)">BOOSTER L'ANNONCE</span></h3>
+           </div>
+         </div>
+
+         <div class="container" style="background: #4D4B4B;box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.25);">
+           <div class="row">
+              <div class="col-sm-5"></div>
+              <div class="col-sm-4"></div>
+              <div class="col-sm-3"><br>
+                <button class="btn align-content-around" style="color:white;background-color:#f74b7f">Publier une Annonce</button>
+              </div>
+           </div>
+            <div class="row">
+               <div class="col-md-2" >
+                   <div style="background-color: white;padding-left:20px">
+                    <span style="color: #0B0146;
+                    font-family: Inter;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;">Nos Offres</span>
+                   </div>
+                 
+               </div>
+               <div class="col-md-5"></div>
+               <div class="col-md-5"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                   <div class="card" style="margin-top:40px">
+                       <div class="card-header" style="background-color: #497CFF;" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" type="button">
+                       <span style="color: #FFF;
+                       font-family: Inter;
+                       font-size: 25px;
+                       font-style: normal;
+                       font-weight: 700;
+                       line-height: normal;">PACK Compte PRO </span> <span style="color:#dddd">( cliquez pour voir plus)</span>
+                       </div>
+                       <div class="card-body collapse" id="collapseExample" style="background-color:#ddd">
+                          <div class="row">
+                             <div class="col-sm-3">
+                                <div class="card" style="background-color: white;">
+                                    <div class="card-header align-items-center">
+                                        <span style="color: #0B0146;font-family: Inter; font-size: 17px;font-style: normal;font-weight: 700;padding-left:15px;line-height: normal;">Compte PRO Bronze</span><br><br>
+                                         <span style="color: #5A5A5A;font-family: Inter;font-size: 8px;padding-left:50px;font-style: normal;font-weight: 400;line-height: normal;text-decoration-line: strikethrough;"><s>24300 FCFA</s></span><span class="badge badge-primary" style="color: #0047FF;font-family: Inter;font-size: 7px;font-style: normal;font-weight: 700;line-height: normal;">-5% réduction</span><br>
+                                          <span  style="color: #590B96;font-family: Inter;padding-left:50px;font-size: 17px;font-style: normal;font-weight: 900;line-height: normal;">23 100 FCFA</span><br><br>
+                                         <button class="btn btn-primary btn-block" style="border-radius: 5px;">PAYER</button>
+                                    </div>
+                                    <div class="card-body ">
+                                       <span style="color: #000;
+                                       font-family: Inter;
+                                       font-size: 13px;
+                                       font-style: normal;
+                                       font-weight: 500;
+                                       line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>+2 mois 2 jours de validité</span><br><br>
+                                      <span style="color: #000;
+                                      font-family: Inter;
+                                      font-size: 13px;
+                                      font-style: normal;
+                                      font-weight: 500;
+                                      line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>+ 20 Annonces</span><br><br>
+                                      <span style="color: #000;
+                                      font-family: Inter;
+                                      font-size: 13px;
+                                      font-style: normal;
+                                      font-weight: 500;
+                                      line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>+ badge <span class="badge badge-success">Proffesionnel</span></span><br><br>
+                                      <span style="color: #000;
+                                    font-family: Inter;
+                                    font-size: 13px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>+ (pro)</span><br><br>
+                                      <span style="color: #000;
+                                      font-family: Inter;
+                                      font-size: 13px;
+                                      font-style: normal;
+                                      font-weight: 500;
+                                      line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg> + Annuaire massage, salons de massage, spas</span>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-sm-3">
+                                <div class="card" style="background-color: white;">
+                                    <div class="card-header align-items-center">
+                                        <span style="color: #0B0146;font-family: Inter; font-size: 17px;font-style: normal;font-weight: 700;padding-left:15px;line-height: normal;">Compte PRO Argent</span><br><br>
+                                         <span style="color: #5A5A5A;font-family: Inter;font-size: 8px;padding-left:50px;font-style: normal;font-weight: 400;line-height: normal;text-decoration-line: strikethrough;"><s>24300 FCFA</s></span><span class="badge" style="background-color: #FB0AE3; color: #0047FF;font-family: Inter;font-size: 7px;font-style: normal;font-weight: 700;line-height: normal;">-5% réduction</span><br>
+                                          <span  style="color: #590B96;font-family: Inter;padding-left:50px;font-size: 17px;font-style: normal;font-weight: 900;line-height: normal;">39 600 FCFA</span><br><br>
+                                         <button class="btn btn-block"  style="border-radius: 5px; color:white;background-color: #FB0AE3;">PAYER</button>
+                                    </div>
+                                    <div class="card-body ">
+                                       <span style="color: #000;
+                                       font-family: Inter;
+                                       font-size: 13px;
+                                       font-style: normal;
+                                       font-weight: 500;
+                                       line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>+2 mois 2 jours de validité</span><br><br>
+                                      <span style="color: #000;
+                                      font-family: Inter;
+                                      font-size: 13px;
+                                      font-style: normal;
+                                      font-weight: 500;
+                                      line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>+ 20 Annonces</span><br><br>
+                                      <span style="color: #000;
+                                      font-family: Inter;
+                                      font-size: 13px;
+                                      font-style: normal;
+                                      font-weight: 500;
+                                      line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>+ badge <span class="badge badge-success">Proffesionnel</span></span><br><br>
+                                      <span style="color: #000;
+                                    font-family: Inter;
+                                    font-size: 13px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>+ (pro)</span><br><br>
+                                      <span style="color: #000;
+                                      font-family: Inter;
+                                      font-size: 13px;
+                                      font-style: normal;
+                                      font-weight: 500;
+                                      line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg> + Annuaire massage, salons de massage, spas</span>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-sm-3">
+                                <div class="card" style="background-color: white;">
+                                    <div class="card-header align-items-center">
+                                        <span style="color: #0B0146;font-family: Inter; font-size: 17px;font-style: normal;font-weight: 700;padding-left:15px;line-height: normal;">Compte PRO Gold</span><br><br>
+                                         <span style="color: #5A5A5A;font-family: Inter;font-size: 8px;padding-left:50px;font-style: normal;font-weight: 400;line-height: normal;text-decoration-line: strikethrough;"><s>24300 FCFA</s></span><span class="badge" style="color: #0047FF;font-family: Inter;font-size: 7px;font-style: normal;font-weight: 700;line-height: normal;">-5% réduction</span><br>
+                                          <span  style="color: #590B96;font-family: Inter;padding-left:50px;font-size: 17px;font-style: normal;font-weight: 900;line-height: normal;">99 600 FCFA</span><br><br>
+                                         <button class="btn btn-primary btn-block" style="border-radius:5px">PAYER</button>
+                                    </div>
+                                    <div class="card-body ">
+                                       <span style="color: #000;
+                                       font-family: Inter;
+                                       font-size: 13px;
+                                       font-style: normal;
+                                       font-weight: 500;
+                                       line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>+12 mois 5 jours de validité</span><br><br>
+                                      <span style="color: #000;
+                                      font-family: Inter;
+                                      font-size: 13px;
+                                      font-style: normal;
+                                      font-weight: 500;
+                                      line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>+ 100 Annonces</span><br><br>
+                                      <span style="color: #000;
+                                      font-family: Inter;
+                                      font-size: 13px;
+                                      font-style: normal;
+                                      font-weight: 500;
+                                      line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>+ badge <span class="badge badge-success">Proffesionnel</span></span><br><br>
+                                      <span style="color: #000;
+                                    font-family: Inter;
+                                    font-size: 13px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>+ (pro)</span><br><br>
+                                      <span style="color: #000;
+                                      font-family: Inter;
+                                      font-size: 13px;
+                                      font-style: normal;
+                                      font-weight: 500;
+                                      line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg> + Annuaire massage, salons de massage, spas</span><br><br>
+                                      <span style="color: #000;
+                                      font-family: Inter;
+                                      font-size: 13px;
+                                      font-style: normal;
+                                      font-weight: 500;
+                                      line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg> Boutique</span><br><br>
+                                      <span style="color: #000000;
+                                      font-family: Inter;
+                                      font-size: 13px;
+                                      font-style: normal;
+                                      font-weight: 500;
+                                      line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>COMPTE CERTIFIÉ</span><br><br>
+
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-sm-3">
+                                <div class="card" style="background-color: white;">
+                                    <div class="card-header align-items-center">
+                                        <span style="color: #0B0146;font-family: Inter; font-size: 17px;font-style: normal;font-weight: 700;padding-left:15px;line-height: normal;">Compte PRO Bronze</span><br><br>
+                                         <span style="color: #5A5A5A;font-family: Inter;font-size: 8px;padding-left:50px;font-style: normal;font-weight: 400;line-height: normal;text-decoration-line: strikethrough;"><s>24300 FCFA</s></span><span class="badge" style="background-color:#F90; color: #0047FF;font-family: Inter;font-size: 7px;font-style: normal;font-weight: 700;line-height: normal;">-5% réduction</span><br>
+                                          <span  style="color: #590B96;font-family: Inter;padding-left:50px;font-size: 17px;font-style: normal;font-weight: 900;line-height: normal;">198 000 FCFA</span><br><br>
+                                         <button class="btn btn-block" style="border-radius:5px;background-color: #F90;color:white">PAYER</button>
+                                    </div>
+                                    <div class="card-body ">
+                                       <span style="color: #000;
+                                       font-family: Inter;
+                                       font-size: 13px;
+                                       font-style: normal;
+                                       font-weight: 500;
+                                       line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>+2 mois 2 jours de validité</span><br><br>
+                                      <span style="color: #000;
+                                      font-family: Inter;
+                                      font-size: 13px;
+                                      font-style: normal;
+                                      font-weight: 500;
+                                      line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>+ 20 Annonces</span><br><br>
+                                      <span style="color: #000;
+                                      font-family: Inter;
+                                      font-size: 13px;
+                                      font-style: normal;
+                                      font-weight: 500;
+                                      line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>+ badge <span class="badge badge-success">Proffesionnel</span></span><br><br>
+                                      <span style="color: #000;
+                                    font-family: Inter;
+                                    font-size: 13px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>+ (pro)</span><br><br>
+                                      <span style="color: #000;
+                                      font-family: Inter;
+                                      font-size: 13px;
+                                      font-style: normal;
+                                      font-weight: 500;
+                                      line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg> + Annuaire massage, salons de massage, spas</span><br><br>
+                                      <span style="color: #000;
+                                      font-family: Inter;
+                                      font-size: 13px;
+                                      font-style: normal;
+                                      font-weight: 500;
+                                      line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg> + Annuaire massage, salons de massage, spas</span><br><br>
+                                      <span style="color: #000;
+                                      font-family: Inter;
+                                      font-size: 13px;
+                                      font-style: normal;
+                                      font-weight: 500;
+                                      line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg> Boutique</span><br><br>
+                                      <span style="color: #000000;
+                                      font-family: Inter;
+                                      font-size: 13px;
+                                      font-style: normal;
+                                      font-weight: 500;
+                                      line-height: normal;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="6.5" fill="#49B822"/>
+                                      </svg>COMPTE CERTIFIÉ</span><br><br>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                   </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                     <div class="card" style="margin-top:20px">
+                         <div class="card-header" style="background-color: #497CFF;" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1" type="button">
+                         <span style="color: #FFF;
+                         font-family: Inter;
+                         font-size: 25px;
+                         font-style: normal;
+                         font-weight: 700;
+                         line-height: normal;">PACK Booster </span> <span style="color:#dddd">( cliquez pour voir plus)</span>
+                         </div>
+                         <div class="card-body collapse" id="collapseExample1" style="background-color: #ddd;">
+                            <div class="row">
+                               <div class="col-md-12" style="background-color: white;">
+                                  <span style="color: #003AD0;
+                                  font-family: Inter;
+                                  font-size: 20px;
+                                  font-style: normal;
+                                  font-weight: 700;
+                                  line-height: normal;">Annonce VIP </span><span>( cliquez pour voir plus)</span>
+                               </div>
+                            </div><br>
+                            <div class="row">
+                                <div class="col-md-12" style="background-color: white;">
+                                   <span style="color: #003AD0;
+                                   font-family: Inter;
+                                   font-size: 20px;
+                                   font-style: normal;
+                                   font-weight: 700;
+                                   line-height: normal;">Annonce Premium </span><span>( cliquez pour voir plus)</span>
+                                </div>
+                             </div><br>
+                             <div class="row">
+                                <div class="col-md-12" style="background-color: white;">
+                                   <span style="color: #003AD0;
+                                   font-family: Inter;
+                                   font-size: 20px;
+                                   font-style: normal;
+                                   font-weight: 700;
+                                   line-height: normal;">Annonce Automatique </span><span>( cliquez pour voir plus)</span>
+                                </div>
+                             </div><br>
+                             <div class="row">
+                                <div class="col-md-12" style="background-color: white;">
+                                   <span style="color: #003AD0;
+                                   font-family: Inter;
+                                   font-size: 20px;
+                                   font-style: normal;
+                                   font-weight: 700;
+                                   line-height: normal;">Prolongation </span><span>( cliquez pour voir plus)</span>
+                                </div>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                     <div class="card" style="margin-top:20px">
+                         <div class="card-header" style="background-color: #497CFF;" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" type="button">
+                         <span style="color: #FFF;
+                         font-family: Inter;
+                         font-size: 25px;
+                         font-style: normal;
+                         font-weight: 700;
+                         line-height: normal;">Mes crédits actuel </span> <span style="color:#dddd">( cliquez pour voir plus)</span>
+                         </div>
+                         <div class="card-body collapse" id="collapseExample2" style="background-color: #ddd;">
+                            <div class="row">
+                               <div class="col-sm-12">
+                                <div class="liste-credit" style="margin:20px">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                      <circle cx="13.5" cy="13.5" r="13.5" fill="#5A5A5A"/>
+                                    </svg> <span style="color: #5A5A5A;
+                                    font-family: Inter;
+                                    font-size: 15px;
+                                    font-style: normal;
+                                    font-weight: 800;
+                                    line-height: normal;"> Crédits disponibles :</span> <span style="color: #D0000C;
+                      font-family: Inter;
+                      font-size: 15px;
+                      font-style: normal;
+                      font-weight: 800;
+                      line-height: normal;">{{user.user.amountSpent}} Fcfa</span> <span style="color: #318D11;
+                      font-family: Inter;
+                      font-size: 15px;
+                      font-style: normal;
+                      font-weight: 800;
+                      line-height: normal;">(<a href="" routerLink="/acheter-credit">Ajouter</a>)</span><br>
+                                    <br>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                      <circle cx="13.5" cy="13.5" r="13.5" fill="#5A5A5A"/>
+                                    </svg><span style="color: #5A5A5A;font-family: Inter;font-size: 15px;font-style: normal;font-weight: 800;line-height: normal;"> Crédits d’annonces :</span><span style="color: #D0000C;font-family: Inter;font-size: 15px;font-style: normal;font-weight: 800;line-height: normal;">{{user.user.credits}} Fcfa</span> <span style="color: #318D11;font-family: Inter;font-size: 15px;font-style: normal;font-weight: 800;line-height: normal;">(<a href="" routerLink="/acheter-credit">Ajouter</a>)</span>
+                                  </div>
+                                  <div class="" style="margin-left:20px">
+                                     <span style="color: #D0000C;text-align: justify;font-family: Inter;font-size: 17px;font-style: normal;font-weight: 700;line-height: normal;">Facile, Rapide, Pratique !</span><span style="color: #000;font-family: Inter;font-size: 17px;font-style: normal;font-weight: 500;line-height: normal;">. Avec notre solution de crédit, vous pouvez recharger votre compte personnel ou professionnel avec le montant que vous souhaitez. Fini la nécessité de saisir vos coordonnées bancaires à chaque achat sur notre site Web ou nos applications. Gagnez du temps et gérez votre budget de manière plus efficace.</span> 
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                     </div>
+                </div>
+              </div><br><br><br><br><br><br><br><br><br><br><br><br>
+         </div>
+        </div>
+      </div>
+    </div>
+    <app-footer></app-footer>
+  </div>
+  

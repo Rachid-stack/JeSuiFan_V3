@@ -1,0 +1,55 @@
+<div class="container-fluid" style="background-color:#D0D0D0">
+    <div class="container">
+        <div class="row" >
+            <div class="col-sm-5">
+               <img src="../../../assets/images/jesuifan 1.png" alt="" style="width:100px;height: 60px;flex-shrink: 0; margin-top:10px ;">
+            </div>
+            
+            <div class="col-sm-7" style="padding-left:450px;">
+                <button class="btn btn-light shadow-lg" style="color:#E6007E;border-radius: 45px;margin-top:15px;margin-right:10px;font-family:Inter ;font-style: normal;font-weight:bold;line-height:normal;"><i class="bi bi-person-circle"></i>{{user.user.nom}}  {{user.user.prenom}}</button>
+                <button class="btn shadow-lg" style="background-color: #E11B88;color: white;margin-top:15px;border-radius: 45px;font-family: Inter;font-style: normal;line-height: normal;font-weight: 400;font-size: 13px;" ><i class="fa-solid fa-right-from-bracket"></i></button>
+            </div>
+          </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: #ffff;">
+    <div class="row">
+      <div class="container" style="border-radius: var(--number, 0px);border: 3px solid #999;width: 900px;height: 500px;flex-shrink: 0;margin-left:200px;margin-top:50px;margin-bottom:50px" >
+        <div class="row">
+          <div class="col-md-12" style="background-color: #497CFF;width:600px;margin:150px">
+            <form (ngSubmit)="purchaseCredits()">
+                <div class="row" >
+                    <div class="col-md-8"><br>
+                       <div class="form-group" style="margin-left:50px">
+                        <label for="amount" style="color:white;font-weight: bold;">Ajouter des Crédits:</label>
+                        <select id="amount" name="amout" class="form-control" [(ngModel)]="amount" style="background-color:#e6e1e1">
+                          <option value="0">Selectionner...</option>
+                          <option value="5600">+ 5,600 FCFA for 2 annnonces</option>
+                          <option value="6600">+ 6,600 FCFA for 3 annnonces</option>
+                          <option value="6600">+ 9,600 FCFA for 4 annnonces</option>
+                          <option value="6600">+ 16,500 FCFA for 5 annnonces</option>
+                          <option value="6600">+ 19,800 FCFA for 6 annnonces</option>
+                          <option value="6600">+ 33,800 FCFA for 7 annnonces</option>
+                          <option value="6600">+ 42,900 FCFA for 8 annnonces</option>
+                          <!-- Add more options for other credit packages -->
+                        </select>
+                       </div>
+                    </div>
+                </div>
+                <div class="div" style="margin-left:50px">
+                    <button type="submit" class="btn" style="font-weight:bold;background-color: #E6007E;color:white">CONTINUER <i class="fa-solid fa-arrow-right"></i></button>
+                    <button type="submit" class="btn btn-light border" style="font-weight:bold" routerLink="/dashboard">ANNULER <i class="fa-solid fa-ban"></i></button>
+                </div><br><br><br>
+                
+              </form>
+              
+          </div>
+          <div class="col-md-12">
+            <span style="color: #444242;font-family: Inter;font-size: 11px;font-style: normal;font-weight: 800;line-height: normal;">Ajoutez des crédits à votre compte. Avec les crédits, vous pré-alimentez votre compte personnel ou professionnel du montant de votre choix. Et vous pouvez utiliser vos crédits pour promouvoir vos annonces pour une meilleure visibilité et de meilleures 
+performances</span>
+          </div>
+        </div>    
+      </div>
+    </div>
+    <app-footer></app-footer>
+</div>

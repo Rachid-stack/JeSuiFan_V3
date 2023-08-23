@@ -1,0 +1,52 @@
+<app-header></app-header>
+<div class="login-form">
+    <div *ngIf="registrationSuccess" class="alert alert-success">
+        Vous vous êtes inscrit avec succès. Vous pouvez désormais vous connecter avec vos identifiants.
+    </div>
+    <form (ngSubmit)="login()">  
+        <div class="form-group">
+            <label for="username" style="font-weight: bold;padding-left: 37px;">Téléphone, mail ou identifiant</label>
+        	<div class="input-group">
+                <div class="input-group-prepend" >
+                    <span class="input-group-text" style="background-color: #444242;">
+                        <span class="fa fa-user" style="color:white"></span>
+                    </span>                    
+                </div>
+               
+                <input type="text" [(ngModel)]="identifiant" name="identifiant" class="form-control" placeholder="Téléphone, mail ou identifiant" required="required" style="border-radius: 7px;">
+            </div>
+        </div>
+		<div class="form-group">
+            <label for="password" style="font-weight: bold;padding-left: 37px;">Mot de passe</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" style="background-color:#444242;">
+                        <i class="fa fa-key" style="color:white"></i>
+                    </span>                    
+                </div>
+               
+                <input type="password" [(ngModel)]="password" name="password" class="form-control" placeholder="Mot de passe" required="required" style="border-radius:7px">
+            </div>
+        </div>        
+        <div class="bottom-action clearfix">
+            <label class="float-left form-check-label"><input type="checkbox">Garder ma session ouverte</label>
+            
+        </div><br>
+        <div class="alert alert-danger" *ngIf="errorMessage">{{ errorMessage }}</div>
+        <div class="form-group" style="padding-left: 50px;">
+            <button type="submit" class="btn btn-primary btn-block btn-log">SE CONNECTER</button>
+        </div>
+        <div class="bottom-action clearfix">
+            <label class="float-left form-check-label">Pas de compte? <a href="" routerLink="/sign-up">s’inscrire</a> </label>
+            <a href="#" class="float-right" style="padding-left:150px">Mot de passe oublié?</a>
+        </div>
+    </form>
+   
+</div>
+ <div class="container">
+    <div class="row" style="padding-left: 300px;">
+       <button class="btn" style="background-color: #D0D0D0;border-radius:45px;width: 540px;color:#003AD0;"><img src="../../../assets/images/google.png" alt="" style="width: 32px;height: 33px;flex-shrink: 0;">Se connecter avec google</button>
+    </div>
+ </div><br><br>
+<app-footer></app-footer>
+
